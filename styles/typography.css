@@ -1,0 +1,25 @@
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h3, p {
+    line-height: 20px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 6em;
+    letter-spacing: 10px;
+}
+
+.center {
+    text-align: center;
+}
