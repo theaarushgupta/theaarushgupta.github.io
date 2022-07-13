@@ -1,0 +1,16 @@
+- name: Samsung Solve for Tomorrow
+  url: https://www.samsung.com/us/solvefortomorrow
+  timeframe: August 2020 - March 2021
+  description: >
+    I worked as the Artificial Intelligence lead for truth, which analyzed articles to measure their trustworthiness 
+    and was 1 of 75 accepted projects out of a pool of thousands of entries submitted from across the United States.
+    I developed the neural network to 98% accuracy and appeared on the 
+    <a href = "https://sanfrancisco.cbslocal.com/" target = "_blank">KPIX CBS SF Bay Area</a> 
+    news channel to talk about the concept.
+- name: Samsung Solve for Tomorrow
+  url: https://www.samsung.com/us/solvefortomorrow
+  timeframe: May 2021 - January 2022
+  description: >
+    I worked on a robot with a team that reached to the finalist stage of the NorCal Regionals.
+    I worked on developing a lightweight but strong arm for the robot and also developed the <a href = "https://github.com/theaarushgupta/tank" target = "_blank">Tank</a> 
+    framework to streamline and enhance the development process for the Autonomous and Tele-Op portions of the competition.

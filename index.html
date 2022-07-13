@@ -1,105 +1,55 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Aarush Gupta</title>
-    <link rel = "stylesheet" href = "./styles/main.css">
-    <link rel = "stylesheet" href = "./styles/typography.css">
-    <link rel = "stylesheet" href = "./styles/tiles.css">
-</head>
-<body>
-    <header>
-        <div class = "full-centered-content">
-            <div class = "center">
-                <h3>Hi, I'm</h3>
-                <h1 class = "title">Aarush Gupta</h1>
-            </div>
-            <h3 class = "center">
-                A 14-year-old student researcher based in California.
-            </h3>
-            <h3 class = "center">
-                Previously President at <a href = "https://hornersteamclub.github.io/" target = "_blank">Horner Steam Club</a> 
-                and a <a href = "https://www.samsung.com/us/solvefortomorrow/" target = "_blank">Samsung Solve for Tomorrow</a> semi-finalist.
-            </h3>
+---
+title: Home
+layout: default
+---
+
+<header>
+    <div class = "full-centered-content">
+        <div class = "center">
+            <h3>Hi, I'm</h3>
+            <h1 class = "title">Aarush Gupta</h1>
         </div>
-    </header>
-    <section>
-        <h1>What I've Been Working On:</h1>
-        <div class = "container">
+        <h3 class = "center">
+            A 14-year-old student researcher based in California.
+        </h3>
+        <h3 class = "center">
+            Previously President at <a href = "https://hornersteamclub.github.io/" target = "_blank">Horner Steam Club</a> 
+            and a <a href = "https://www.samsung.com/us/solvefortomorrow/" target = "_blank">Samsung Solve for Tomorrow</a> semi-finalist.
+        </h3>
+    </div>
+</header>
+<section>
+    <h1>What I've Been Working On:</h1>
+    <div class = "container">
+        {% for project in site.data.projects %}
             <div class = "tile">
-                <h2><a href = "https://github.com/theaarushgupta/codebuddy" target = "_blank">CodeBuddy</a></h2>
-                <p>
-                    A package to help debug code with online solutions on errors.
-                    Has attained over 1,000,000 downloads since release and averages 130,000 downloads per month.
-                </p>
+                <h2><a href = "{{ project.url }}" target = "_blank">{{ project.name }}</a></h2>
+                <p>{{ project.description }}</p>
             </div>
+        {% endfor %}
+    </div>
+</section>
+<section>
+    <h1>Where I've Been At:</h1>
+    <div class = "container">
+        {% for org in site.data.experience %}
             <div class = "tile">
-                <h2>HealthTrack</h2>
-                <p>
-                    A novel AI-based contact tracing solution for COVID-19. 
-                    Submitted to <a href = "https://imaginecup.microsoft.com/en-us/junior" target = "_blank">Microsoft Imagine Cup Junior</a>
-                    with <a href = "https://hornersteamclub.github.io/" target = "_blank">Horner Steam Club</a>.
-                </p>
+                <h2><a href = "{{ org.url }}" target = "_blank">{{ org.name }}</a></h2>
+                <p>{{ org.timeframe }}</p>
+                <p>{{ org.description }}</p>
             </div>
+        {% endfor %}
+    </div>
+</section>
+<section>
+    <h1>What I've Been Acknowledged For:</h1>
+    <div class = "container">
+        {% for org in site.data.acknowledgements %}
             <div class = "tile">
-                <h2><a href = "https://github.com/theaarushgupta/oscar" target = "_blank">Oscar</a></h2>
-                <p>
-                    A conservative garbage collector for C.
-                </p>
+                <h2><a href = "{{ org.url }}" target = "_blank">{{ org.name }}</a></h2>
+                <p>{{ org.timeframe }}</p>
+                <p>{{ org.description }}</p>
             </div>
-            <div class = "tile">
-                <h2><a href = "https://theaarushgupta.com/sanity/" target = "_blank">Sanity</a></h2>
-                <p>
-                    Currently, a 32-bit ring 0 kernel; for something between the likes of a toy bootloader or tiny kernel and Arch Linux.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1>Where I've Been At:</h1>
-        <div class = "container">
-            <div class = "tile">
-                <h2><a href = "https://hornersteamclub.github.io/" target = "_blank">Horner Steam Club</a></h2>
-                <p>August 2021 - May 2022</p>
-                <p>
-                    I served as President for the organization.
-                    I organized 41 members into groups where they could grow best and assisted them in learning how to program or build robots along with other officers. 
-                    I served as the lead for HealthTrack, a project for <a href = "https://imaginecup.microsoft.com/en-us/junior" target = "_blank">Microsoft's Imagine Cup Junior</a> competition.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1>What I've Been Acknowledged For:</h1>
-        <div class = "container">
-            <div class = "tile">
-                <h2><a href = "https://www.samsung.com/us/solvefortomorrow/" target = "_blank">Samsung Solve for Tomorrow</a></h2>
-                <p>August 2020 - March 2021</p>
-                <p>
-                    I worked as the Artificial Intelligence lead for truth, which analyzed articles to measure their trustworthiness 
-                    and was 1 of 75 accepted projects out of a pool of thousands of entries submitted from across the United States.
-                    I developed the neural network to 98% accuracy and appeared on the <a href = "https://sanfrancisco.cbslocal.com/" target = "_blank">KPIX CBS SF Bay Area</a> news channel to talk about the concept.
-                </p>
-            </div>
-            <div class = "tile">
-                <h2><a href = "https://www.firstinspires.org/robotics/ftc" target = "_blank">FIRST Tech Competition</a></h2>
-                <p>May 2021 - January 2022</p>
-                <p>
-                    I worked on a robot with a team that reached to the finalist stage of the NorCal Regionals.
-                    I worked on developing a lightweight but strong arm for the robot and also developed the <a href = "https://github.com/theaarushgupta/tank" target = "_blank">Tank</a> 
-                    framework to streamline and enhance the development process for the Autonomous and Tele-Op portions of the competition.
-                </p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <a href = "https://github.com/theaarushgupta" target = "_blank">Github</a>
-        <a href = "https://www.linkedin.com/in/theaarushgupta" target = "_blank">LinkedIn</a>
-        <a href = "https://twitter.com/theaarushgupta" target = "_blank">Twitter</a>
-        <a href = "mailto:aarush@theaarushgupta.com" target = "_blank">Email</a>
-        <p>Copyright 2022 © Aarush Gupta. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+        {% endfor %}
+    </div>
+</section>

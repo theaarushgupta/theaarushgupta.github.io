@@ -1,0 +1,19 @@
+- name: CodeBuddy
+  url: https://github.com/theaarushgupta/codebuddy
+  description: >
+    A package to help debug code with online solutions on errors.
+    Has attained over 1,000,000 downloads since release and averages 130,000 downloads per month.
+- name: HealthTrack
+  url: 
+  description: >
+    A novel AI-based contact tracing solution for COVID-19. 
+    Submitted to <a href = "https://imaginecup.microsoft.com/en-us/junior" target = "_blank">Microsoft Imagine Cup Junior</a>
+    with <a href = "https://hornersteamclub.github.io/" target = "_blank">Horner Steam Club</a>.
+- name: CodeBuddy
+  url: https://github.com/theaarushgupta/oscar
+  description: >
+    A conservative garbage collector for C.
+- name: CodeBuddy
+  url: https://github.com/theaarushgupta/sanity
+  description: >
+    Currently, a 32-bit ring 0 kernel; for something between the likes of a toy bootloader or tiny kernel and Arch Linux.
