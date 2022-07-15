@@ -13,7 +13,7 @@
   url: https://github.com/theaarushgupta/oscar
   description: >
     A conservative garbage collector for C.
-- name: CodeBuddy
+- name: Sanity
   url: https://github.com/theaarushgupta/sanity
   description: >
     Currently, a 32-bit ring 0 kernel; for something between the likes of a toy bootloader or tiny kernel and Arch Linux.
